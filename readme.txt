@@ -1,0 +1,2 @@
+- staps ไม่นับ Record
+- mock นับ Record
