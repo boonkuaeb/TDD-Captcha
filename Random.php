@@ -1,7 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: boonkuae_boo
- * Date: 5/24/14
- * Time: 2:25 PM
- */ 
+class Random {
+
+    public function getPattern()
+    {
+        return rand(1,2);
+    }
+
+    public function getOperand()
+    {
+        return rand(1,9);
+    }
+
+    public function getOperator()
+    {
+        return rand(1,3);
+    }
+}
