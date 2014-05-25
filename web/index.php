@@ -5,7 +5,7 @@ $app = new Silex\Application();
 $app->register(new Silex\Provider\ServiceControllerServiceProvider());
 
 $app['captchaService'] = $app->share(function() {
-    return new CaptChaService();
+    return new CaptchaService();
 });
 
 $app['captchaController'] = $app->share(function() use ($app) {

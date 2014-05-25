@@ -8,7 +8,7 @@ class AccessLogPDO
     }
     public function count()
     {
-        $sql = "SELECT count(*) FROM `access_log`";
+        $sql ="SELECT count(*) FROM `access_log`";
         $sth = $this->pdo->prepare($sql);
         $sth->execute();
         $rows = $sth->fetch(PDO::FETCH_NUM);

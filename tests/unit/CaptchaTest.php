@@ -1,5 +1,4 @@
 <?php
-#require_once "Captcha.php";
 
 class CaptchaTest extends PHPUnit_Framework_TestCase
 {
@@ -92,6 +91,18 @@ class CaptchaTest extends PHPUnit_Framework_TestCase
     {
         $captcha = new Captcha(2,4,1,5);
         $this->assertSame("4", $captcha->getLeftOperand());
+    }
+
+    public function test_toString_1111_return_1PlusOne()
+    {
+        $captcha = new Captcha(1,1,1,1);
+        $this->assertSame("One + 1 =", $captcha->toString());
+    }
+
+    public function test_toString_2111_return_OnePlus1()
+    {
+        $captcha = new Captcha(2,1,1,1);
+        $this->assertSame("1 + One =", $captcha->toString());
     }
 
     /**
