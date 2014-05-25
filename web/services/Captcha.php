@@ -25,6 +25,14 @@ class Captcha
         $this->operator = $operator;
     }
 
+    public function toString()
+    {
+       return $this->getLeftOperand() . ' '
+              . $this->getOperator()  . ' '
+              .$this->getRightOperand(). ' = ';
+    }
+
+
     public function getRightOperand()
     {
         if($this->pattern == 1)
