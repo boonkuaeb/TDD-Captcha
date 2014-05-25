@@ -12,6 +12,6 @@ class CaptchaController
 
     public function captcha()
     {
-        return $this->captchaService->getCaptCha()->toString();
+        return $this->captchaService->getCaptCha();
     }
 }

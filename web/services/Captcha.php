@@ -29,7 +29,7 @@ class Captcha
     {
        return $this->getLeftOperand() . ' '
               . $this->getOperator()  . ' '
-              .$this->getRightOperand(). ' = ';
+              .$this->getRightOperand(). ' =';
     }
 
 

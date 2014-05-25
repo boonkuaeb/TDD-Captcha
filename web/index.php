@@ -15,6 +15,10 @@ $app['captchaController'] = $app->share(function() use ($app) {
 $app['debug'] = TRUE;
 
 
+$app->get('/',function(){
+    return '';
+});
+
 $app->get('/api/v7/captcha','captchaController:captcha');
 
 
