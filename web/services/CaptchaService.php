@@ -15,8 +15,6 @@ class CaptChaService
         $this->random = $random;
     }
 
-
-
     public function getCaptCha()
     {
         //$random = new Random();
