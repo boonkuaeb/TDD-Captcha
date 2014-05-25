@@ -1,6 +1,6 @@
 <?php
 
-require_once('./CaptchaService.php');
+#require_once('./CaptchaService.php');
 
 class CaptchaServiceTest extends PHPUnit_Framework_TestCase
 {

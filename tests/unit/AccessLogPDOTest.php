@@ -1,5 +1,5 @@
 <?php
-require_once('./AccessLogPDO.php');
+#require_once('./AccessLogPDO.php');
 class AccessLogPDOTest extends PHPUnit_Extensions_Database_TestCase
 {
     private $pdo;
@@ -17,7 +17,6 @@ class AccessLogPDOTest extends PHPUnit_Extensions_Database_TestCase
     ";
         $pdo->query($query);
     }
-
 
     public function getDataSet()
     {

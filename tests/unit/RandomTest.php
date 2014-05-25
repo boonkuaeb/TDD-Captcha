@@ -1,5 +1,5 @@
 <?php
-require_once('./Random.php');
+#require_once('./Random.php');
 
 class RandomTest extends PHPUnit_Framework_TestCase
 {

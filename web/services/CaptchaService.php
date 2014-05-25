@@ -1,8 +1,8 @@
 <?php
-require_once('./Random.php');
-require_once('./Captcha.php');
+#require_once('./Random.php');
+#require_once('./Captcha.php');
 
-class CaptchaService
+class CaptChaService
 {
     private $random;
     public function setRandom($random){
