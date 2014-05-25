@@ -3,3 +3,4 @@ vendor/
 tmp/
 memory
 results/
+web/index.php
