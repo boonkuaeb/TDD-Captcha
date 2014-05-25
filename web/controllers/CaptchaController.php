@@ -4,9 +4,14 @@ use Symfony\Component\HttpFoundation\Request;
 
 class CaptchaController
 {
+    private $captchaService;
+    public function __construct(CaptChaService $captchaService)
+    {
+        $this->captchaService = $captchaService;
+    }
+
     public function captcha()
     {
-        $captcha = new CaptChaService();
-        return $captcha->getCaptCha()->toString();
+        return $this->captchaService->getCaptCha()->toString();
     }
 }
