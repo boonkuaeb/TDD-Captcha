@@ -14,4 +14,10 @@ class RandomTest extends PHPUnit_Framework_TestCase
         $random = new Random();
         $this->assertContains($random->getOperand(), array(1, 2,3,4,5,6,7,8,9));
     }
+    public function testShouldReturn_1_to_9_On_LeftOperator()
+    {
+        $random = new Random();
+        $this->assertContains($random->getOperator(), array(1, 2,3));
+    }
+
 }
