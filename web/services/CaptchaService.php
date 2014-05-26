@@ -8,13 +8,12 @@ class CaptChaService
 
     public function __construct()
     {
-        $this->random = new Random();
+        $this->random = new Random() ;
     }
 
     public function setRandom($random){
         $this->random = $random;
     }
-
 
     public function getCaptCha()
     {
@@ -25,8 +24,6 @@ class CaptChaService
         $random_rightOperand = $this->random->getOperand();
 
         $captcha  = new Captcha($random_pattern,$random_leftOperand,$random_operator,$random_rightOperand);
-        return $captcha->toString();
-
-
+        return $captcha;
     }
 }

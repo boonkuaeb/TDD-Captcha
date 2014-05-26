@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e29bdf54c806bf5954acf8a3b97b8698",
+    "hash": "4a18325c838e61a89236e99053ddadd9",
     "packages": [
         {
             "name": "phpunit/dbunit",
@@ -819,6 +819,7 @@
             "time": "2014-03-29 14:15:59"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/browser-kit",
             "version": "v2.3.15",
             "target-dir": "Symfony/Component/BrowserKit",
@@ -876,6 +877,8 @@
             "time": "2014-04-22 14:58:51"
         },
         {
+=======
+>>>>>>> study_silex
             "name": "symfony/debug",
             "version": "v2.4.5",
             "target-dir": "Symfony/Component/Debug",
@@ -931,61 +934,6 @@
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
             "time": "2014-04-30 06:22:28"
-        },
-        {
-            "name": "symfony/dom-crawler",
-            "version": "v2.4.5",
-            "target-dir": "Symfony/Component/DomCrawler",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "5e8ad4367af467b9e40d6bb27d58a76a87cebb79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/5e8ad4367af467b9e40d6bb27d58a76a87cebb79",
-                "reference": "5e8ad4367af467b9e40d6bb27d58a76a87cebb79",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/css-selector": "~2.0"
-            },
-            "suggest": {
-                "symfony/css-selector": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony DomCrawler Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-05-21 15:50:42"
         },
         {
             "name": "symfony/event-dispatcher",

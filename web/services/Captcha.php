@@ -27,8 +27,11 @@ class Captcha
 
     public function toString()
     {
-        return $this->getLeftOperand().' '.$this->getOperator() . ' '. $this->getRightOperand() . ' =';
+       return $this->getLeftOperand() . ' '
+              . $this->getOperator()  . ' '
+              .$this->getRightOperand(). ' = ';
     }
+
 
     public function getRightOperand()
     {

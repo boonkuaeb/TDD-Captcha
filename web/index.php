@@ -1,16 +1,21 @@
 <?php
-// web/index.php
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
+$app->register(new Silex\Provider\ServiceControllerServiceProvider());
 
-$app->get('/',function(){
-   return '';
+$app['captchaService'] = $app->share(function() {
+    return new CaptChaService();
 });
 
-$app->get('/api/v7/captcha', function () use ($app) {
-    $captchaController = new CaptchaController(new CaptChaService());
-    return $captchaController->captcha();
+$app['captchaController'] = $app->share(function() use ($app) {
+    return new CaptchaController($app['captchaService']);
 });
+
+$app['debug'] = TRUE;
+
+
+$app->get('/api/v7/captcha','captchaController:captcha');
+
 
 $app->run();

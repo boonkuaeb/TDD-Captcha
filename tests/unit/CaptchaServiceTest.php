@@ -53,4 +53,10 @@ class CaptchaServiceTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("-", $captcha->getOperator());
 
     }
+
+    public function test1111toString_Should_Return_toString()
+    {
+        $captcha = new CaptCha(1,1,1,1);
+        $this->assertEquals("One + 1", $captcha->toString());
+    }
 }

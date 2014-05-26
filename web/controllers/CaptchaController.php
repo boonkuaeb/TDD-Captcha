@@ -1,17 +1,17 @@
 <?php
+use Silex\Application;
+use Symfony\Component\HttpFoundation\Request;
 
 class CaptchaController
 {
-
-    private  $captcha_service ;
-
-    public function __construct(CaptChaService $captcha_service)
+    private $captchaService;
+    public function __construct(CaptChaService $captchaService)
     {
-        $this->captcha_service = $captcha_service;
+        $this->captchaService = $captchaService;
     }
 
     public function captcha()
     {
-        return $this->captcha_service->getCaptCha();
+        return $this->captchaService->getCaptCha()->toString();
     }
 }
