@@ -5,9 +5,17 @@
 class CaptChaService
 {
     private $random;
+
+    public function __construct()
+    {
+        $this->random = new Random();
+    }
+
     public function setRandom($random){
         $this->random = $random;
     }
+
+
     public function getCaptCha()
     {
         //$random = new Random();
@@ -17,7 +25,7 @@ class CaptChaService
         $random_rightOperand = $this->random->getOperand();
 
         $captcha  = new Captcha($random_pattern,$random_leftOperand,$random_operator,$random_rightOperand);
-        return $captcha;
+        return $captcha->toString();
 
 
     }

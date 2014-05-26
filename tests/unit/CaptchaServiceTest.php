@@ -16,8 +16,8 @@ class CaptchaServiceTest extends PHPUnit_Framework_TestCase
         $captcha = $captcha_service->getCaptCha();
 
         $this->assertEquals("One", $captcha->getLeftOperand());
-        $this->assertEquals("1", $captcha->getRightOperand());
         $this->assertEquals("+", $captcha->getOperator());
+        $this->assertEquals("1", $captcha->getRightOperand());
     }
 
     public function testGetCaptchaShould_Return_Captcha_With_Input_2112()
