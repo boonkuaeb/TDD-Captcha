@@ -5,3 +5,4 @@ memory
 results/
 web/index.php
 jenkins_install/
+composer.lock
